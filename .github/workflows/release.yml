@@ -40,4 +40,4 @@ jobs:
         run: |
           VERSION="${{ github.event.release.tag_name || github.event.inputs.version }}"
           VERSION="${VERSION#v}"
-          ./gradlew publishAllPublicationsToMavenCentralRepository --no-daemon -PVERSION_NAME="$VERSION"
+          ./gradlew publishAllPublicationsToMavenCentralRepository --no-configuration-cache --no-daemon -PVERSION_NAME="$VERSION"
