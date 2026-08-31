@@ -1,5 +1,7 @@
 # 🔥 compose-recomposition-highlighter
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.zakayothuku/compose-recomposition-highlighter.svg?label=Maven%20Central&color=blue)](https://central.sonatype.com/artifact/io.github.zakayothuku/compose-recomposition-highlighter)
+[![Android CI](https://github.com/zakayothuku/compose-recomposition-highlighter/actions/workflows/ci.yml/badge.svg)](https://github.com/zakayothuku/compose-recomposition-highlighter/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.3.20-purple.svg)](https://kotlinlang.org)
 [![Android](https://img.shields.io/badge/Android-MinSDK%2024-green.svg)](https://developer.android.com)
