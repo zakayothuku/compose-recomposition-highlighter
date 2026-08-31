@@ -53,11 +53,11 @@ flowchart TD
 
 ## 📦 Installation
 
-Add JitPack to your `settings.gradle.kts`:
+Add Maven Central to your `settings.gradle.kts` (standard in modern Gradle setups):
 
 ```kotlin
 repositories {
-    maven { url = uri("https://jitpack.io") }
+    mavenCentral()
 }
 ```
 
@@ -65,7 +65,11 @@ Add the dependency to your app's `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    debugImplementation("com.github.zakayothuku:compose-recomposition-highlighter:v1.0.0")
+    // Debug builds: full highlighter engine + UI overlay
+    debugImplementation("io.github.zakayothuku:compose-recomposition-highlighter:1.0.0")
+    
+    // Release builds: zero-overhead no-op artifact
+    releaseImplementation("io.github.zakayothuku:compose-recomposition-highlighter-noop:1.0.0")
 }
 ```
 
